@@ -1,0 +1,39 @@
+.div{
+    text-align: center;
+    font-family: arial, sans-serif;
+    width: 300px;
+    margin: 0 auto;
+}
+form{
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 5px;
+}
+.address{
+    height: 35px;
+}
+h2{
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 5px;
+}
+label{
+    display:inline-block;
+    width: 100px;
+    text-align: left;
+}
+#option{
+    width: 170px;
+    text-align: center;
+}
+#birthday{
+    width: 165px;
+}
+#gender{
+    width: 200px;
+    display: inline-block;
+    margin-left: 13px;
+    vertical-align: middle;
+    float: left;
+}
+
