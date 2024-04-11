@@ -1,0 +1,19 @@
+h2{
+    background-color: red ;
+    opacity: 0.8;
+    text-align: center;
+    color: white;
+}
+.input {
+    margin-left: 28px;
+}
+form{
+    color: blue;
+}
+.div{
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+#hobby{
+    margin-left: 41.5%;
+}
