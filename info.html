@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="info.css">
+    <title>Information</title>
+</head>
+<body>
+<div class="div">
+  <form action="info.html" method="POST">
+    <h2>Sở thích của bạn</h2>
+    Họ và tên:<span style="color:red">*</span>
+    <input type="text" name="yourname" placeholder="Nhập họ và tên"><br>
+    Email:<span style="color:red">*</span>
+    <input class="input" type="email" name="email" placeholder="Nhập email@gmail.com"><br>
+
+
+      <table id="hobby">
+          <tr>
+              <td>Sở Thích:</td>
+              <td><input type="checkbox" name="hobby">Thể thao</td>
+              <td><input type="checkbox" name="hobby">Âm nhạc</td>
+              <td><input type="checkbox" name="hobby">Đọc sách</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><input type="checkbox" name="hobby">Lướt web</td>
+              <td><input type="checkbox" name="hobby">Chơi game</td>
+              <td><input type="checkbox" name="hobby">Điện ảnh</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><input type="checkbox" name="hobby">Du lịch</td>
+          </tr>
+      </table>
+    <br>
+      <div>
+          <button  type="submit" value="Submit">Gửi thông tin</button>
+          <button  type="reset" value="Reset">Nhập lại</button>
+      </div>
+  </form>
+</div>
+</body>
+</html>
