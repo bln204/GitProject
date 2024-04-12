@@ -1,0 +1,25 @@
+td{
+    width: 100px;
+    height: 100px;
+}
+table{
+    background-color: orange;
+    text-align: center;
+    border: none;
+    border-collapse: collapse;
+}
+.td_black{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.td_white{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
