@@ -1,0 +1,113 @@
+.text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#sunday{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2.5px;
+}
+.in_week{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2.5px;
+}
+#satuday{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2.5px;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+#sun{
+    width: 100px;
+    height: 40px;
+    color: red;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2.5px;
+}
+#sat{
+    width: 100px;
+    height: 40px;
+    color: blue;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2.5px;
+}
+.remaining{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2.5px;
+}
+#october{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chu_nhat{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    font-size: 30px;
+    color:red;
+    text-align: center;
+    border: 2.5px solid grey;
+}
+.trong_tuan{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    border: 2.5px solid grey;
+}
+.thu_bay{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    font-size: 30px;
+    color:blue;
+    text-align: center;
+    border: 2.5px solid grey;
+}
+#timetable{
+    border-collapse: collapse;/*Tạo khung cho số phụ*/
+}
+.sub_num{
+    position: absolute;/*Cho phép số phụ đứng*/
+    bottom: -1em; /* Điều chỉnh dưới chân số */
+    right: 1.8em; /* Điều chỉnh vị trí ngang của số phụ */
+    font-size: 0.45em;
+    color:black;
+}
