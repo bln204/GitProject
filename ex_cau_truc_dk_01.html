@@ -38,18 +38,12 @@
     /*let num_a = +prompt('Nhập số a: ');
     let num_b = +prompt('Nhập số b: ');
     let num_c = +prompt('Nhập số c: ');
-    if (num_a > num_b) {
-        if (num_a > num_c) {
+    if (num_a > num_b && num_a > num_c) {
             alert('Số a là số lớn nhất!');
-        }
-    } if (num_b > num_a) {
-        if (num_b > num_c) {
+    } else if (num_b > num_a && num_b > num_c) {
             alert('Số b là số lớn nhất!');
-        }
-    } if (num_c > num_a) {
-        if (num_c > num_b) {
+    }  else if (num_c > num_a && num_c > num_b) {
             alert('Số c là số lớn nhất!');
-        }
     } else {
         alert('Ba số a, b, c bằng nhau!');
     }*/
@@ -77,9 +71,9 @@
         rose = revenue * 30 / 100;
         alert('Hoa hồng nhận được tùy theo doanh số: '+ rose +' VND');
         console.log('1');
-    } if (revenue >= 10000) {
+    }  else if (revenue >= 10000) {
         rose = revenue * 50 / 1000;
-        alert('Hoa hồng nhận được tùy theo doanh số: '+ rose +' VND');
+        document.write('Hoa hồng nhận được tùy theo doanh số: '+ rose +' VND');
     }*/
 
     /*Bài 7: Tính cước điện thoại hộ gia đình*/
@@ -94,7 +88,6 @@
     }*/
 
 </script>
-
 
 </body>
 </html>
