@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<script>
+    function checkSNT(number) {
+        let dem = 0; // biến này đếm các SNT
+        let dem_SNT = 0; //biến này đếm xem đã đủ SNT như người dùng nhập chưa
+        for (let i = 2; i < 1000; i++) {
+            if (dem_SNT < number) { //nếu nhỏ hơn số người dùng nhập thì thực thi
+                for (let j = 1; j <= i; j++) {
+                    if (i % j === 0) { //ktra xem j có phải là ước số của i hay không
+                        dem += 1;
+                    }
+                }
+                if (dem === 2) { //ktra ước số thứ 2 xem có đúng 2 ước số hay không
+                    document.write(i + '<br>');
+                    dem_SNT += 1;
+                }
+                dem = 0; // gán lại dem = 0 để ktra một số i mới
+            } else {
+                break;
+            }
+        }
+    }
+
+    let number = parseInt(prompt('Nhập số lượng số nguyên tố:'));
+    checkSNT(number);
+</script>
+
+</body>
+</html>
