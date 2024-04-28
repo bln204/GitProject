@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<input type="text" id="txtAdd">
+<input type="button" id="Add" value="Add" onclick="add_element_to_array()">
+<input type="button" id="Print" value="Print" onclick="print_array()">
+<div id="result"></div>
+
+</body>
+</html>
+<script>
+    let x = 0;
+    let array = [];
+
+    function add_element_to_array() {
+        array[x] = document.getElementById("txtAdd").value;
+        alert('Đã thêm ' + array[x] + ' vào vị trí ' + x);
+        x++;
+        document.getElementById("txtAdd").value = "";
+    }
+
+    function print_array() {
+        let e = '<hr/>';
+        for (let i = 0; i < array.length; i++) {
+            e += 'Phần tử thứ ' + i + ' = ' + array[i] + '<br/>';
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>
