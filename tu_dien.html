@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="vocabulary" placeholder="Nhập từ cần dịch">
+<input type="submit" value="Dịch" onclick="interpret()">
+<div id="result"></div>
+<script>
+
+    function interpret() {
+        let Eng = ["Apple", "Banana", "Orange", "Pen", "Pencil", "Book"];
+        let Vie = ["Táo", "Chuối", "Cam", "Bút", "Bút chì", "Sách"];
+        let word = document.getElementById('vocabulary').value;
+        let index_of_Eng = 0;
+        console.log(word);
+        let trans_word = "";
+        for (let i = 0; i < Eng.length; i++) {
+            if (word === Eng[i]) {
+                index_of_Eng = i;
+                for (let j = 0; j < Vie.length; j++) {
+                    if (index_of_Eng === j) {
+                        trans_word = Vie[j];
+                    }
+                }
+            }
+        }
+        document.getElementById('result').innerHTML ="Từ " + word + " dịch ra là " + trans_word;
+    }
+</script>
+</body>
+</html>
