@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="Star">
+    <input type="submit" value="Check" onclick="check_Star()">
+    <div id="result"></div> -->
+
+
+    <script>
+        //Bài 2: 
+        // let number = +prompt('Nhập một số bất kỳ:' );
+        // let number2 = addNumber() ;
+        // function addNumber(){
+        //     return number + 1;
+        // }
+
+
+        //Bài 3
+        // let sum = 0;
+        // let num1 = +prompt('Nhập số thứ nhất');
+        // let num2 = +prompt('Nhập số thứ hai');
+        // let checkNum = checkNumber(num1, num2);
+        // function checkNumber(number1, number2){
+        //     if (number1 > number2){
+        //         alert('Số thứ nhất lớn hơn số thứ hai');
+        //     } else {
+        //         sum = number1 + number2;
+        //         alert('Tổng hai số là: ' + sum);
+        //         return sum;
+        //     }
+        // }
+
+
+        //Bài 5:
+        function check_Star() {
+            let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+            let stars = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+            let checkStar = prompt('Nhập ngôi sao:');;
+            let index = 0;
+            let print_star = "";
+            let check = false;
+            for (let i = 0; i < star.length; i++) {
+                if (checkStar === star[i]) {
+                    index = i;
+                    check = true;
+                    for (let j = 0; j < stars.length; j++) {
+                        if (index === j) {
+                            print_star = stars[j];
+                        }
+                    }
+                }
+            }
+            if(check){
+                alert(print_star);
+            } else {
+                alert('Không tìm thấy ngôi sao này');
+            }
+        }
+
+        check_Star();
+    </script>
+
+</body>
+
+</html>
