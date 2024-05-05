@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    
+function check_SNT(number) {
+    let checkSNT = true;
+    if (number < 2) {
+        alert('Số ' + number + ' không phải là số nguyên tố!');
+    }
+    else {
+        for (let i = 2; i <= Math.sqrt(sNT); i++) {
+            if (sNT % i === 0) {
+                checkSNT = false;
+                break;
+            }
+        }
+        if (checkSNT) {
+            alert('Số ' + sNT + ' là số nguyên tố.');
+        } else {
+            alert('Số ' + sNT + ' không phải là số nguyên tố');
+        }
+    }
+}
+let sNT = +prompt('Nhập số nguyên tố cần kiểm tra:');
+check_SNT(sNT);
+</script>
+
+
+</body>
+
+</html>
