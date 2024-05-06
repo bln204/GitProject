@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.
+        //  Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"
+        // let index = +prompt('Nhập số lượng phần tử:');
+        // let i = 0;
+        // let arr = [];
+        // while (i < index) {
+        //     arr[i] = prompt('Nhập phần tử thứ ' + (i) + ':');
+        //     i++;
+        // }
+
+
+        // let first = 0;
+        // let last = arr.length - 1;
+        // while (first < last) {
+        //     let temp = arr[first];
+        //     arr[first] = arr[last];
+        //     arr[last] = temp;
+        //     first++;
+        //     last--;
+        // }
+        // document.write(arr);
+
+        // Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng. 
+        // let index = +prompt('Nhập số lượng phần tử:');
+        // let i = 0;
+        // let arr = [];
+        // while (i < index) {
+        //     arr[i] = prompt('Nhập phần tử thứ ' + (i) + ':');
+        //     i++;
+        // }
+        // let count = 0;
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (!isNaN(parseInt(arr[i])) ){
+        //         console.log(arr[i]);
+        //         count++;
+        //     }
+        // }
+        // document.write("So luong phan tu la so trong mang: " + count);
+        // Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+        let index = +prompt('Nhập số lượng phần tử:');
+        let i = 0;
+        let arr = [];
+        while (i < index) {
+            arr[i] = prompt('Nhập phần tử thứ ' + (i) + ':');
+            i++;
+        }
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (isNaN(parseInt(arr[i])) ){
+                console.log(arr[i]);
+                count++;
+            }
+        }
+        document.write("So luong phan tu la ký tự trong mang: " + count);
+    </script>
+
+</body>
+
+</html>
