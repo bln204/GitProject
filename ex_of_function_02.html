@@ -36,15 +36,40 @@
             // minOfNumber();
         // Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. 
         // Nếu là nguyên dương trả về true, ngược lại trả về false.
-        function checkNumber (){
-            let number = +prompt('Nhập một số bất kỳ');
-            if (Number.isInteger(number) && number > 0) {
-                return console.log(true);
-            } else{
-                return console.log(false);
+        // function checkNumber (){
+        //     let number = +prompt('Nhập một số bất kỳ');
+        //     if (Number.isInteger(number) && number > 0) {
+        //         return console.log(true);
+        //     } else{
+        //         return console.log(false);
+        //     }
+        // }
+        // checkNumber();
+
+        // Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. 
+        // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. 
+        function check_in_array (){
+            let array =[];
+            
+            let num = +prompt('Nhập số lượng phần tử:');
+            let i = 0;
+            while (i < num){
+                array[i] = +prompt('Nhập phần tử thứ '+ (i) + ':');
+                i++;
             }
+            let checkNum = +prompt('Nhập số cần kiểm tra');
+            let count = 0;
+            for ( let j = 0; j < array.length;j++){
+                if (checkNum === array[j]){
+                    count ++;
+                }
+                else {
+                    count = -1;
+                }
+            }
+            console.log(count);
         }
-        checkNumber();
+        check_in_array();
     </script>
 
 </body>
