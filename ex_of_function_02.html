@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+        // function checkIsNumber (){
+        //     let number = +prompt('Nhập vào một số bất kỳ');
+        //     if (Number.isInteger(number)) {
+        //         return console.log(true);
+        //     } else {
+        //         return console.log(false);
+        //     }
+        // }
+        // checkIsNumber();
+        // Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+            // function minOfNumber() {
+            //     let number = [];
+            //     for (let i = 0; i < 3; i++) {
+            //         number[i] = +prompt('Nhập vào một số bất kỳ');
+            //     }
+            //     let min = number[0];
+            //     for (let i =0 ; i < 3; i++) {
+            //         if (number[i] < min ){
+            //             min = number[i];
+            //         }
+            //     }
+            //     console.log(min);
+            // }
+            // minOfNumber();
+        // Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. 
+        // Nếu là nguyên dương trả về true, ngược lại trả về false.
+        function checkNumber (){
+            let number = +prompt('Nhập một số bất kỳ');
+            if (Number.isInteger(number) && number > 0) {
+                return console.log(true);
+            } else{
+                return console.log(false);
+            }
+        }
+        checkNumber();
+    </script>
+
+</body>
+
+</html>
