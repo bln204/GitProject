@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hướng Đối Tượng</title>
+</head>
+<body>
+<script>
+    class Date {
+        #day;
+        #month;
+        #year
+        constructor(day, month, year) {
+            this.#day = day;
+            this.#month = month;
+            this.#year = year;
+        }
+        getDay(){
+            return this.#day;
+        }
+        getMonth(){
+            return this.#month;
+        }
+        getYear(){
+            return this.#year;
+        }
+        setDay(day){
+            this.#day = day;
+        }
+        setMonth(month){
+            this.#month = month;
+        }
+        setYear(year){
+            this.#year = year;
+        }
+        toString(){
+            return this.#day + '/' + this.#month + '/' + this.#year;
+        }
+    }
+
+
+    let date = new Date(14, 5, 2024);
+    date.setDay(10);
+    date.setMonth(6);
+    date.setYear(2025);
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getYear();
+    // document.write('Ngày:'+ day + ' tháng ' + month + ' năm ' + year);
+    document.write('Ngày: '+ date.toString());
+</script>
+</body>
+</html>
