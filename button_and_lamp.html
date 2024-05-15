@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button and Lamp</title>
+</head>
+<body>
+<script>
+    class theLamp{
+
+        constructor(status) {
+            this.status = status;
+        }
+        turnOn (){
+            this.status = true;
+        }
+        turnOff (){
+            this.status = false;
+        }
+        getTurnOnLamp(){
+            return this.status;
+        }
+        setTurnOnLamp (){
+            this.status = true;
+        }
+        getTurnOffLamp (){
+            return this.status;
+        }
+        setTurnOffLamp (){
+            this.status = false;
+        }
+    }
+    class switchButton {
+        constructor(status, lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+        getTurnOnButton(){
+            return this.status;
+        }
+        setTurnOnButton(){
+            this.status = true;
+        }
+        getTurnOffButton(){
+            return this.status;
+        }
+        setTurnOffButton(){
+            this.status = false;
+        }
+        turnOn (){
+            if ( this.status === true ){
+                console.log("Đèn đang bật!");
+            } else{
+                this.status = true;
+                this.lamp.status = true;
+                console.log("Đèn đã bật!");
+            }
+
+        }
+        turnOff (){
+            if (this.status === false ){
+                console.log("Đèn đang tắt!");
+            } else{
+                this.status = false;
+                this.lamp.status = false;
+                console.log("Đèn đã tắt!");
+            }
+
+        }
+    }
+    let lamp = new theLamp(false);
+    let button = new switchButton(false, lamp);
+    button.turnOn();
+    button.turnOn();
+    button.turnOff();
+    button.turnOff();
+    console.log(lamp.getTurnOffLamp());
+    console.log(button.getTurnOnButton());
+
+</script>
+</body>
+</html>
