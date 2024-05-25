@@ -11,7 +11,7 @@ class ManagementPersonnel {
             table += "<td>" + this.personnels[i].birthday + "</td>";
             table += "<td>" + this.personnels[i].gender + "</td>";
             table += "<td>" + this.personnels[i].position + "</td>";
-            table += "<td><img id='preview' width='100px' height='100px' src='"+this.personnels[i].imgFile+"'></td>";
+            table += "<td><img id='preview' alt='error' width='100px' height='100px' src=''></td>";
             table += "<td><button id='delete'  onclick='deletePersonnel(" + i + ")'>Xóa</button> " +
                 "<button id='edit'  onclick='editPersonnel(" + i + ")'>Sửa</button></td>";
             table += "</tr>";

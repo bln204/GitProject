@@ -1,4 +1,5 @@
 class Personnel {
+
     constructor(id, name, birthday, gender, position, imgFile) {
         this.id = id;
         this.name = name;

@@ -6,28 +6,27 @@ let manage = new ManagementPersonnel (array);
 
 function getImage(){
     let fileInput = document.getElementById('img').files;
-        console.log(fileInput);
-    let img;
-    img.src = fileInput[0].name;
+    console.log(fileInput[0]);
+    document.getElementById('preview').src = "image/" + fileInput[0].name;
 
 }
 
 
 function checkPersonnelIsEmpty() {
-    const id = document.getElementById('id').value;
-    const name = document.getElementById('fullname').value;
-    const birthday = document.getElementById('birthday').value;
-    const gender = document.getElementById('gender').value;
-    const position = document.getElementById('position').value;
-    const imgFile = document.getElementById('img').files;
+    let id = document.getElementById('id').value;
+    let name = document.getElementById('fullname').value;
+    let birthday = document.getElementById('birthday').value;
+    let gender = document.getElementById('gender').value;
+    let position = document.getElementById('position').value;
+    let imgFile = document.getElementById('img').value;
 
 
-    const fields = [
+    let fields = [
         { field: id, name: 'ID' },
-        { field: name, name: 'Full Name' },
-        { field: birthday, name: 'Birthday' },
-        { field: gender, name: 'Gender' },
-        { field: position, name: 'Position' },
+        { field: name, name: 'Họ tên' },
+        { field: birthday, name: 'Ngày, tháng, năm sinh' },
+        { field: gender, name: 'Giới tính' },
+        { field: position, name: 'Chức vụ' },
         { field: imgFile, name: 'Image File' }
     ];
 
@@ -39,6 +38,7 @@ function checkPersonnelIsEmpty() {
         }
     }
     return true;
+
 }
 function addPersonnel(){
 
@@ -57,7 +57,7 @@ function addPersonnel(){
 
     let personnel = new Personnel(id, name, birthday, gender, position, imgFile);
     manage.addPersonnel(personnel);
-
+    getImage();
     clearAll();
     alert("Đã thêm thành công!");
     manage.show();
@@ -76,14 +76,18 @@ function editPersonnel(id){
     document.getElementById('img').files = per.image;
 
 
-    if(!checkPersonnelIsEmpty()){
-        return false;
-    }
+    // if(!checkPersonnelIsEmpty()){
+    //     return false;
+    // }
 
     idPer = id;
 }
 function updatePersonnel () {
-   let id = document.getElementById('id').value;
+
+    if(!checkPersonnelIsEmpty()){
+    return false;
+    }
+    let id = document.getElementById('id').value;
     let name = document.getElementById('fullname').value;
     let birthday = document.getElementById('birthday').value;
     let gender = document.getElementById('gender').value;
@@ -94,6 +98,7 @@ function updatePersonnel () {
     manage.edit(per, id, name, birthday, gender, position, imgFile);
     manage.show();
     clearAll();
+
 
 }
 

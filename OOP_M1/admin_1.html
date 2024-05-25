@@ -13,13 +13,17 @@
     <div>The KIRIK Team</div>
 </div>
 <div id="below_head">
-    <a href="index_1.html"><button id="button1"><i class="fa-solid fa-house"></i>Trang chủ</button></a>
-    <a href="admin_1.html"><button id="button2"><i class="fa-solid fa-people-roof"></i>Quản lý</button></a>
+    <a href="index_1.html">
+        <button id="button1"><i class="fa-solid fa-house"></i>Trang chủ</button>
+    </a>
+    <a href="admin_1.html">
+        <button id="button2"><i class="fa-solid fa-people-roof"></i>Quản lý</button>
+    </a>
 </div>
 <div id="table1">
-    <table border='1 solid'   style="width: 500px; height: 300px; border: 1px solid black; border-collapse: collapse">
+    <table border='1 solid' style="width: 500px; height: 300px; border: 1px solid black; border-collapse: collapse">
         <tr>
-            <th id="text" colspan="2">Thông tin nhân sự </th>
+            <th id="text" colspan="2">Thông tin nhân sự</th>
         </tr>
 
         <tr>
@@ -49,13 +53,13 @@
         </tr>
         <tr>
             <th>Ảnh</th>
-            <td><input type="file" accept="image/*" id="img" ></td>
+            <td><input type="file" accept="image/*" id="img"></td>
         </tr>
         <tr>
             <th></th>
             <td>
-                <button  id="btnadd" onclick="addPersonnel()">Thêm Nhân Sự</button>
-                <button  id="btnedit" onclick="updatePersonnel()">Lưu</button>
+                <button id="btnadd" onclick="addPersonnel()">Thêm Nhân Sự</button>
+                <button id="btnedit" onclick="updatePersonnel()">Lưu</button>
             </td>
         </tr>
     </table>
@@ -80,8 +84,9 @@
         </tbody>
     </table>
 </div>
-<button onclick="getImage()">Click</button>
-<img src="" alt="Chưa có gì" id="image">
+
+<!--<button onclick="getImage()">Click</button>-->
+<!--<img src="" alt="Chưa có gì" id="image" width="100px" height="100px">-->
 </body>
 <script src="js/personnel_1.js"></script>
 <script src="js/managementPersonnel_1.js"></script>
