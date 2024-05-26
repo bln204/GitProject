@@ -1,0 +1,103 @@
+#head{
+    background-color: #FFD154;
+    color: #002795;
+    /*border-radius: 5px;*/
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#below_head{
+    background-color:#002795;
+    height: 22px;
+}
+
+#button1{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #002795;
+    color:#FFD154;
+}
+
+#button2{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #002795;
+    color:#FFD154;
+}
+
+
+#table1{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    justify-content: left;
+    align-items: center;
+    margin-top : 100px;
+    padding-left:150px;
+    height: 400px;
+    width: 400px;
+}
+
+#table2{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-top: 100px;
+    padding-right: 100px;
+    float: right;
+}
+
+#btnadd{
+    font-family: 'Montserrat', sans-serif;
+    height:25px;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-color: #66bb6a;
+}
+#btnedit{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #FFD154;
+
+}
+
+#delete{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #d61b06;
+}
+#edit{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #FFD154;
+}
+
+#text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+#meme{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: white;
+}
+
+#funny{
+    font-size: 10em;
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/wDHb2BKDXShzy/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+}

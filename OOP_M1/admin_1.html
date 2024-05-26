@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The KIRIK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+<body>
+<div id="head">
+    <div>The KIRIK Team</div>
+</div>
+<div id="below_head">
+    <a href="index_1.html">
+        <button id="button1"><i class="fa-solid fa-house"></i>Trang chủ</button>
+    </a>
+    <a href="admin_1.html">
+        <button id="button2"><i class="fa-solid fa-people-roof"></i>Quản lý</button>
+    </a>
+</div>
+<div id="table1">
+    <table border='1 solid' style="width: 500px; height: 300px; border: 1px solid black; border-collapse: collapse">
+        <tr>
+            <th id="text" colspan="2">Thông tin nhân sự</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <td><input type="text" id="id"></td>
+
+        </tr>
+        <tr>
+            <th>Họ tên</th>
+            <td><input type="text" id="fullname"></td>
+        </tr>
+        <tr>
+            <th>Ngày sinh</th>
+            <td><input type="date" id="birthday"></td>
+        </tr>
+        <tr>
+            <th>Giới tính</th>
+            <td><select id="gender">
+                <option>Nam</option>
+                <option>Nữ</option>
+
+            </select></td>
+        </tr>
+        <tr>
+            <th>Chức vụ</th>
+            <td><input type="text" id="position"></td>
+        </tr>
+        <tr>
+            <th>Ảnh</th>
+            <td><input type="file" accept="image/*" id="img"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <button id="btnadd" onclick="addPersonnel()">Thêm Nhân Sự</button>
+                <button id="btnedit" onclick="updatePersonnel()">Lưu</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="table2">
+    <table border="1 solid" style=" border: 1px solid black; width: 700px; border-collapse: collapse">
+        <tr>
+            <th style="font-size: 40px" colspan="7">Danh sách nhân sự</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Lớp</th>
+            <th>Ảnh</th>
+            <th>Tùy chọn</th>
+
+        </tr>
+        <tbody id="list">
+        </tbody>
+    </table>
+</div>
+
+<!--<button onclick="getImage()">Click</button>-->
+<!--<img src="" alt="Chưa có gì" id="image" width="100px" height="100px">-->
+</body>
+<script src="js/personnel_1.js"></script>
+<script src="js/managementPersonnel_1.js"></script>
+<script src="js/main_1.js"></script>
+</html>
