@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập mảng tìm kiếm SNT</title>
+</head>
+<body>
+<!-- Nhập từ bàn phím mảng số nguyên a gồm n phần tử (n<=50), đưa ra màn hình mảng
+vừa nhập vào và 1 mảng mới b bao gồm tất cả các số nguyên tố của mảng a.-->
+<input id="array" type="text" placeholder="Nhập mảng bất kỳ">
+<button onclick="print_SNT()">Enter</button>
+<div id="resultArray"></div>
+<div id="primeArray"></div>
+<script>
+    function isPrime(num) {
+        if (num <= 1) return false;
+        if (num <= 3) return true;
+        if (num % 2 === 0 || num % 3 === 0) return false;
+        for (let i = 5; i * i <= num; i += 6) {
+            if (num % i === 0 || num % (i + 2) === 0) return false;
+        }
+        return true;
+    }
+
+    function print_SNT() {
+        let inputArray = document.getElementById("array").value.trim().split(" ").map(Number);
+        let primeNumbers = [];
+
+        // Kiểm tra mảng nhập vào có lớn hơn 50 phần tử không
+        if (inputArray.length > 50) {
+            alert("Vui lòng nhập một mảng có 50 phần tử!");
+            return;
+        }
+
+        // Kiểm tra xem người dùng đã nhập mảng hợp lệ chưa
+        if (!inputArray.every(Number.isInteger)) {
+            alert("Vui lòng nhập một mảng số nguyên hợp lệ!");
+            return;
+        }
+
+        for (let i = 0; i < inputArray.length; i++) {
+            if (isPrime(inputArray[i])) {
+                primeNumbers.push(inputArray[i]);
+            }
+        }
+
+        document.getElementById("resultArray").innerHTML = "Mảng vừa nhập: " + inputArray.join(", ");
+        document.getElementById("primeArray").innerHTML = "Mảng mới chứa các số nguyên tố: " + primeNumbers.join(", ");
+    }
+</script>
+</body>
+</html>

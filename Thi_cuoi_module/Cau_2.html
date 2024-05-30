@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sánh phân số</title>
+</head>
+<body>
+<h2>So sánh phân số</h2>
+<label for="phan_so_1">Phân số 1:</label>
+<input type="text" id="phan_so_1" >
+<br>
+<label for="phan_so_2">Phân số 2:</label>
+<input type="text" id="phan_so_2" >
+<br>
+<button onclick="soSanhPhanSo()">So sánh</button>
+<div id="result"></div>
+
+<script>
+    function soSanhPhanSo() {
+        let phanSo_1 = document.getElementById("phan_so_1").value.trim().split("/");
+        let phanSo_2 = document.getElementById("phan_so_2").value.trim().split("/");
+
+        // Chuyển chuỗi thành số nguyên
+        let num1 = parseInt(phanSo_1[0]);
+        let den1 = parseInt(phanSo_1[1]);
+        let num2 = parseInt(phanSo_2[0]);
+        let den2 = parseInt(phanSo_2[1]);
+
+        // So sánh hai phân số
+        if (num1 * den2 === num2 * den1) {
+            document.getElementById("result").innerText = "True";
+        } else {
+            document.getElementById("result").innerText = "False";
+        }
+    }
+</script>
+</body>
+</html>

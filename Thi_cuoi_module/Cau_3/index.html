@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sổ Tiết Kiệm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+<body>
+<div id="head">
+    <div>The KIRIK Bank</div>
+
+</div>
+<div id="table1">
+    <table border='1 solid' style="width: 500px; height: 300px; border: 1px solid black; border-collapse: collapse">
+        <tr>
+            <th id="text" colspan="2">Thông tin sổ tiết kiệm</th>
+        </tr>
+
+        <tr>
+            <th>Mã sổ</th>
+            <td><input type="text" id="id"></td>
+
+        </tr>
+        <tr>
+            <th>Loại tiết kiệm</th>
+            <td><input type="text" id="loai"></td>
+        </tr>
+        <tr>
+            <th>Họ tên khách hàng</th>
+            <td><input type="text" id="fullname"></td>
+        </tr>
+        <tr>
+            <th>Chứng minh nhân dân</th>
+            <td><input type="text" id="cmnd"></td>
+        </tr>
+        <tr>
+            <th>Ngày mở</th>
+            <td><input type="text" id="dayopen"></td>
+        </tr>
+        <tr>
+            <th>Số tiền gửi</th>
+            <td><input type="number"  id="money"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <button id="btnadd" onclick="addSoTietKiem()">Thêm sổ tiết kiệm<i class="fa-solid fa-user-plus"></i></button>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="table2">
+    <table border='1 solid' style="width: 600px; height: 300px; border: 1px solid black; border-collapse: collapse">
+        <tr>
+            <th  colspan="7">Danh sách sổ tiết kiệm</th>
+        </tr>
+        <tr>
+            <th>Mã sổ</th>
+            <th>Loại tiết kiệm</th>
+            <th>Họ tên khách hàng</th>
+            <th>Chứng minh nhân dân</th>
+            <th>Ngày mở</th>
+            <th>Số tiền gửi</th>
+            <th>Tùy chọn</th>
+        </tr>
+        <tbody id="list_STK">
+        </tbody>
+    </table>
+</div>
+<script src="so_tiet_kiem.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
